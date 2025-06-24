@@ -11,10 +11,9 @@
 }
 
 .calculator {
-  max-width: 350px;
-  max-height: 600px;
+  max-width: fit-content;
+  max-height: fit-content;
   height: 600px;
-  /* width: 350px; */
   border-radius: 30px;
   margin: 2% auto 0 auto;
   padding-top: 80px;
@@ -27,12 +26,10 @@
 .screen {
   height: 100px;
   margin-bottom: 50px;
-  /* width: 350px; */
   max-height: 100px;
   max-width: 350px;
   background-color: #333333c6;
   font-size: 2.5rem;
-  /* padding: 10px; */
   color: #333;
   display: flex;
   justify-content: flex-end;
@@ -43,7 +40,7 @@
 }
 
 .btn-holder {
-  height: 450px;
+  height: fit-content;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -51,11 +48,15 @@
 .btn-container {
   margin-top: 15px;
   margin-bottom: 20px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  /* grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  row-gap: 30px;
-  padding-left: 16px;
+  row-gap: 30px; */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-self: space-evenly;
+  row-gap: 20px;
+  column-gap: 20px;
 }
 
 .btn {
@@ -67,8 +68,6 @@
   width: 60px;
   height: 60px;
   font-size: 1.5rem;
-  /* max-width: 40px;
-  max-height: 40px; */
   text-align: center;
 }
 
@@ -79,3 +78,35 @@
 .btn-point {
   font-weight: 800;
 }
+/* @media (max-width: 500px) {
+  .calculator {
+    width: 80%;
+    height: auto;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .screen {
+    font-size: 1.5rem;
+    height: 80px;
+    max-height: 80px;
+    max-width: 100%;
+  }
+  .btn-holder {
+    width: 100%;
+    height: auto;
+  }
+
+  .btn-container {
+    row-gap: 15px;
+    column-gap: 10px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .btn-container .btn {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.2rem;
+  }
+} */

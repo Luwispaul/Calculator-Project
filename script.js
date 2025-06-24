@@ -122,7 +122,7 @@ const input = function () {
             const result = eval(inputString);
             display.textContent = result;
             // console.log(display.textContent);
-            inputString = " ";
+            inputString = result;
           }
         }
       }
