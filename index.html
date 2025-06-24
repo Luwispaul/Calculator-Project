@@ -14,58 +14,55 @@
     <div class="calculator">
       <div class="screen display"></div>
 
-      <div class="btn-history-holder">
+      <div class="btn-holder">
         <div class="btn-container">
-          <div class="first-row">
-            <button class="btn btn-on/off">
-              <i class="fa-solid fa-power-off"></i>
-            </button>
-            <button class="btn btn-clear">C</button>
-            <button class="btn btn-undo">
-              <i class="fa-solid fa-delete-left"></i>
-            </button>
-          </div>
-          <div class="middle-rows">
-            <button class="btn btn-seven">7</button>
-            <button class="btn btn-8">8</button>
-            <button class="btn btn-nine">9</button>
-            <button class="btn btn-divnamee">
-              <i class="fa-solid fa-divide"></i>
-            </button>
-            <button class="btn btn-four">4</button>
-            <button class="btn btn-five">5</button>
-            <button class="btn btn-six">6</button>
-            <button class="btn btn-times">
-              <i class="fa-solid fa-xmark"></i>
-            </button>
-            <button class="btn btn-one">1</button>
-            <button class="btn btn-two">2</button>
-            <button class="btn btn-three">3</button>
-            <button class="btn btn-minus">
-              <i class="fa-solid fa-minus"></i>
-            </button>
-            <button class="btn btn-double-zero">00</button>
-            <button class="btn btn-zero">0</button>
-            <button class="btn btn-point">.</button>
-            <button class="btn btn-plus">
-              <i class="fa-solid fa-plus"></i>
-            </button>
-          </div>
-          <div class="last-row">
+          <button class="btn power-btn">
+            <i class="fa-solid fa-power-off"></i>
+          </button>
+          <button class="btn btn-clear">C</button>
+          <button class="btn btn-delete">
+            <i class="fa-solid fa-delete-left"></i>
+          </button>
+          <button class="btn dynamic-inp btn-plus" data-value="+">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+
+          <button class="btn dynamic-inp btn-seven">7</button>
+          <button class="btn dynamic-inp btn-eight">8</button>
+          <button class="btn dynamic-inp btn-nine">9</button>
+          <button class="btn dynamic-inp btn-divide" data-value="/">
+            <i class="fa-solid fa-divide"></i>
+          </button>
+          <button class="btn dynamic-inp btn-four">4</button>
+          <button class="btn dynamic-inp btn-five">5</button>
+          <button class="btn dynamic-inp btn-six">6</button>
+          <button class="btn dynamic-inp btn-times" data-value="*">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <button class="btn dynamic-inp btn-one">1</button>
+          <button class="btn dynamic-inp btn-two">2</button>
+          <button class="btn dynamic-inp btn-three">3</button>
+          <button class="btn dynamic-inp btn-minus" data-value="-">
+            <i class="fa-solid fa-minus"></i>
+          </button>
+          <button class="btn dynamic-inp btn-double-zero">00</button>
+          <button class="btn dynamic-inp btn-zero">0</button>
+          <button class="btn dynamic-inp btn-point">.</button>
+
+          <button class="btn dynamic-inp btn-equal">=</button>
+
+          <!-- <div class="last-row">
             <button class="btn btn-history">
               <i class="fa-solid fa-clock-rotate-left"></i>
             </button>
-            <button class="btn btn-percent">
+            <button class="btn dynamic-inp btn-percent" data-value="%">
               <i class="fa-solid fa-percent"></i>
             </button>
-            <button class="btn btn-equal">
-              <i class="fa-solid fa-equals"></i>
-            </button>
-          </div>
+            <button class="btn dynamic-inp btn-equal">=</button>
+          </div> -->
         </div>
-
-        <div class="history-holder hidden"></div>
       </div>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>

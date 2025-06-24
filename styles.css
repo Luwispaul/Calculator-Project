@@ -5,8 +5,7 @@
 
 .calculator,
 .screen,
-.btn-history-holder,
-#calc-input {
+.btn-holder {
   border: 1px solid #333;
   width: 350px;
 }
@@ -31,7 +30,7 @@
   /* width: 350px; */
   max-height: 100px;
   max-width: 350px;
-  background-color: rgb(240, 240, 135);
+  background-color: #333333c6;
   font-size: 2.5rem;
   /* padding: 10px; */
   color: #333;
@@ -39,11 +38,11 @@
   justify-content: flex-end;
   align-items: end;
   flex-wrap: wrap;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
 
-.btn-history-holder {
+.btn-holder {
   height: 450px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -51,42 +50,26 @@
 
 .btn-container {
   margin-top: 15px;
-}
-
-.first-row,
-.middle-rows,
-.last-row {
   margin-bottom: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  row-gap: 30px;
+  padding-left: 16px;
 }
 
-.first-row,
-.last-row {
-  gap: 20px;
+.btn {
+  color: #333;
+  cursor: pointer;
 }
 
-.middle-rows {
-  gap: 20px;
-}
-
-.middle-rows .btn {
+.btn-container .btn {
   width: 60px;
   height: 60px;
-  border-radius: 2px;
   font-size: 1.5rem;
   /* max-width: 40px;
   max-height: 40px; */
   text-align: center;
-}
-
-.first-row .btn,
-.last-row .btn {
-  width: 90px;
-  height: 40px;
-  font-size: 1.5rem;
 }
 
 .btn-clear {
