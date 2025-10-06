@@ -17,3 +17,11 @@ How I did it:
 * Used forEach() function to add click events to multiple buttons.
 
 * Used the data-value and this.dataset.value to read element values like the "+", "*", "-", "/" operators that are recognized by JavaScript behind the scenes, instead of it's actual values (icons).
+
+* Used if/else statements to add the button value to the display area when clicked.
+
+* Used eval() function to read inputs on the display area and run it as JS code display the result when the button is clicked.
+
+That is the complete steps I took to make the app work.
+preview with the link below ⬇️⬇️⬇️ 
+https://luwispaul.github.io/Calculator-Project/
